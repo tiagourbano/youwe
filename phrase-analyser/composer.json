@@ -1,0 +1,23 @@
+{
+    "name": "youwe/phrase-analyser",
+    "description": "Web application that will analyse customer input and provide some statistics.",
+    "authors": [
+        {
+            "name": "Tiago Urbano",
+            "email": "tiago.urbano@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phrase\\Analyser\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
