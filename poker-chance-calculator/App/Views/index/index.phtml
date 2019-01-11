@@ -1,0 +1,28 @@
+<form method="POST" action="/draft">
+  <div>
+    <label>Select a suit: </label>
+    <select name="suit">
+      <?php foreach ($this->view->suits as $suit): ?>
+        <option value="<?php echo $suit; ?>"><?php echo $suit; ?></option>
+      <?php endforeach; ?>
+    </select>
+  </div>
+
+  <div>
+    <label>Select a value: </label>
+    <select name="value">
+      <?php foreach ($this->view->values as $value): ?>
+        <option value="<?php echo $value; ?>"><?php echo $value; ?></option>
+      <?php endforeach; ?>
+    </select>
+  </div>
+
+  <div>
+    <input type="submit" value="Calculate your chance">
+    <input type="reset" value="Reset">
+  </div>
+
+  <pre>
+    <?php print_r($this->view->shuffle_deck); ?>
+  </pre>
+</form>

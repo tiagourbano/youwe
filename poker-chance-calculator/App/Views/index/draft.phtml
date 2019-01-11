@@ -1,0 +1,14 @@
+<form method="POST" action="/draft">
+  <div>
+    You selected: <?php echo $this->view->selected_card; ?>
+    <br><br>
+    <?php echo $this->view->chance; ?>
+  </div>
+
+  <br><br>
+  <div>
+    <input type="hidden" name="suit" value="<?php echo $this->view->suit; ?>">
+    <input type="hidden" name="value" value="<?php echo $this->view->value; ?>">
+    <input type="submit" value="Draft">
+  </div>
+</form>
