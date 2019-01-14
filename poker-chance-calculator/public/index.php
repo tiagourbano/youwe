@@ -1,4 +1,6 @@
 <?php
-  require_once '../vendor/autoload.php';
 
-  $init = new \App\Init;
+require_once '../vendor/autoload.php';
+
+// Initialize application.
+$init = new \App\Init();
